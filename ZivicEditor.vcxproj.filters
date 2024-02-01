@@ -21,12 +21,42 @@
     <ClCompile Include="source\window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\mainloop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\button.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\drawText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\createWindow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\zivic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\mainloop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\drawText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\scene0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\createWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

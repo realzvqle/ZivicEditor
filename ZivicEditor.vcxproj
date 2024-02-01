@@ -127,10 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\createWindow.c" />
+    <ClCompile Include="source\scene0.c" />
+    <ClCompile Include="source\drawText.c" />
+    <ClCompile Include="source\button.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="source\mainloop.c" />
     <ClCompile Include="source\window.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\button.h" />
+    <ClInclude Include="headers\createWindow.h" />
+    <ClInclude Include="headers\drawText.h" />
+    <ClInclude Include="headers\mainloop.h" />
+    <ClInclude Include="headers\scene0.h" />
     <ClInclude Include="headers\window.h" />
     <ClInclude Include="headers\zivic.h" />
   </ItemGroup>

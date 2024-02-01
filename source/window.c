@@ -13,17 +13,20 @@ static window setupWindow() {
 
 
 int createWindow(state* state) {
+	state->isExit = false;
+	state->isWindowSpawned = false;
 	state->mainWindow = setupWindow();
 	state->backgroundColor = BLACK;
 	SetTraceLogLevel(LOG_ERROR);
-
 	InitWindow(state->mainWindow.sizeX, state->mainWindow.sizeY, state->mainWindow.name);
 	SetWindowState(FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT);
-	while (!WindowShouldClose()) {
+	state->font = LoadFontEx("resources\\fonts\\Mukta-ExtraBold.ttf", 400, NULL, 0);
+	while (!WindowShouldClose() && !state->isExit) {
 		BeginDrawing();
-		DrawFPS(10, 10);
 		ClearBackground(state->backgroundColor);
+		mainLoop(state);
 		EndDrawing();
 	}
+	UnloadFont(state->font);
 	return 0;
 }
