@@ -25,10 +25,19 @@ ButtonState drawButton(char* text, int x, int y, int sizeX, int sizeY, Font font
 
     if (isMouseOver && IsMouseButtonDown(MOUSE_LEFT_BUTTON)) {
         DrawRectangleLinesEx((Rectangle) { x, y, sizeX, sizeY }, 2, textColor);
-        return BUTTON_CLICK_LEFT;
+        return BUTTON_DOWN_LEFT;
     }
 
     if (isMouseOver && IsMouseButtonDown(MOUSE_RIGHT_BUTTON)) {
+        DrawRectangleLinesEx((Rectangle) { x, y, sizeX, sizeY }, 2, textColor);
+        return BUTTON_DOWN_RIGHT;
+    }
+    if (isMouseOver && IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) {
+        DrawRectangleLinesEx((Rectangle) { x, y, sizeX, sizeY }, 2, textColor);
+        return BUTTON_CLICK_LEFT;
+    }
+
+    if (isMouseOver && IsMouseButtonReleased(MOUSE_RIGHT_BUTTON)) {
         DrawRectangleLinesEx((Rectangle) { x, y, sizeX, sizeY }, 2, textColor);
         return BUTTON_CLICK_RIGHT;
     }

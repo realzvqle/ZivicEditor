@@ -19,7 +19,7 @@ int createWindow(state* state) {
 	state->backgroundColor = BLACK;
 	SetTraceLogLevel(LOG_ERROR);
 	InitWindow(state->mainWindow.sizeX, state->mainWindow.sizeY, state->mainWindow.name);
-	SetWindowState(FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT);
+	SetWindowState(FLAG_WINDOW_RESIZABLE);
 	state->font = LoadFontEx("resources\\fonts\\Mukta-ExtraBold.ttf", 400, NULL, 0);
 	while (!WindowShouldClose() && !state->isExit) {
 		BeginDrawing();

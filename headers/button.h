@@ -8,7 +8,9 @@ typedef enum ButtonState{
     BUTTON_NOT_INTERACTED,
     BUTTON_HOVER,
     BUTTON_CLICK_LEFT,
-    BUTTON_CLICK_RIGHT
+    BUTTON_CLICK_RIGHT,
+    BUTTON_DOWN_LEFT,
+    BUTTON_DOWN_RIGHT
 } ButtonState;
 
 
