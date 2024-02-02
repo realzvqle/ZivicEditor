@@ -134,6 +134,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="source\mainloop.c" />
     <ClCompile Include="source\window.c" />
+    <ClCompile Include="source\windowadditions.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\button.h" />
@@ -142,6 +143,7 @@
     <ClInclude Include="headers\mainloop.h" />
     <ClInclude Include="headers\scene0.h" />
     <ClInclude Include="headers\window.h" />
+    <ClInclude Include="headers\windowaddition.h" />
     <ClInclude Include="headers\zivic.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

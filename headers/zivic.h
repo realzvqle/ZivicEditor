@@ -31,3 +31,25 @@ typedef struct state {
 	bool isExit;
 	bool isWindowSpawned;
 } state;
+
+typedef struct zivWindow {
+	int x;
+	int y;
+	int sizeX;
+	int sizeY;
+	int prevSizeX;
+	int prevSizeY;
+	int sizeXPast;
+	int sizeYPast;
+	bool isDragging;
+	int dragOffsetX;
+	int dragOffsetY;
+	double dragStopDelay;
+	bool isResizing;
+	int resizeOffsetX;
+	int resizeOffsetY;
+	int resizeButtonHeight;
+	int resizeButtonGap;
+	double resizeStopDelay;
+	bool init;
+} zivWindow;
