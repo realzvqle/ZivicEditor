@@ -8,8 +8,9 @@ void scene0(state* state) {
     static zivWindow window = { 30, 30, 200, 400 ,false, 0, 0, 0.0 };
     static zivWindow window2 = { 90, 90, 300, 400 ,false, 0, 0, 0.0 };
 
-    
-    spawnWindowEx(&window2, state, BLUE, SKYBLUE, GRAY, DARKGRAY, SKYBLUE, "Hello", true);
+    if (IsKeyPressed(KEY_J)) {
+
+    }
 
     spawnWindowEx(&window, state, BLUE, SKYBLUE, RED, LIGHTGRAY, GREEN, "No Hello", true);
     drawText(Buffer, window.x, window.y, 50, state->font, BLACK);

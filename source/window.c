@@ -22,6 +22,7 @@ int createWindow(state* state) {
 	SetWindowState(FLAG_WINDOW_RESIZABLE);
 	state->font = LoadFontEx("resources\\fonts\\Mukta-ExtraBold.ttf", 400, NULL, 0);
 	while (!WindowShouldClose() && !state->isExit) {
+		if (IsKeyPressed(KEY_F)) ToggleFullscreen();
 		BeginDrawing();
 		ClearBackground(state->backgroundColor);
 		mainLoop(state);
