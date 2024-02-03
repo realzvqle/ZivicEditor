@@ -4,7 +4,7 @@
 
 
 
-void handleResizeButton(zivWindow* window, state* state, Color windowColor, Color windowColorHover) {
+static void handleResizeButton(zivWindow* window, state* state, Color windowColor, Color windowColorHover) {
     window->resizeButtonHeight = 30;
     window->resizeButtonGap = 0;
 
@@ -29,7 +29,7 @@ void handleResizeButton(zivWindow* window, state* state, Color windowColor, Colo
     }
 }
 
-void handleResizeStop(zivWindow* window) {
+static void handleResizeStop(zivWindow* window) {
     if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON) || (window->isResizing && window->resizeStopDelay <= 0)) {
         window->isResizing = false;
         window->resizeStopDelay = 0.5;

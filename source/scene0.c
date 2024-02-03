@@ -1,14 +1,17 @@
 #include "../headers/scene0.h"
 
+zivWindow window2 = { 90, 90, 300, 400, false, 0, 0, 0.0 };
 
 
 
 void scene0(state* state) {
     static char* Buffer = "HIII";
     static zivWindow window = { 30, 30, 200, 400 ,false, 0, 0, 0.0 };
-    static zivWindow window2 = { 90, 90, 300, 400 ,false, 0, 0, 0.0 };
 
     if (IsKeyPressed(KEY_J)) {
+        window2 = (zivWindow){ 90, 90, 300, 400, false, 0, 0, 0.0 };
+
+        spawnWindowEx(&window2, state, BLUE, SKYBLUE, GRAY, DARKGRAY, SKYBLUE, "Hello", false);
 
     }
 
